@@ -1,5 +1,6 @@
 // What is the spread operator and why would I want to use it?
 
+// Situation: copying information of an object and storing it into another object
 
 const rei2018 = {
     name: "Rei",
@@ -13,54 +14,84 @@ const rei2018 = {
     programmingLanguages: []
 }
 
-const changes = {
+const rei2019 = {
+    name: rei2018.name,
     employer: "Access Labs",
     city: "Brooklyn",
-    programmingLanguages: ["JS", "Ruby"]
+    tired: rei2018.tired,
+    info: {
+        hair: rei2018.hair,
+        wearsGlasses: rei2018.wearsGlasses
+    },
+    programmingLanguages: rei2018.programmingLanguages
 }
 
-const rei2019 = {
-    ...rei2018,
-    ...changes
-}
 
-const rei2020 = {
-    ...rei2019,
-    programmingLanguages: []
-}
+// console.log(rei2018)
 
-  // reiNextWeek.name = "Reinald"
-  // reiNextWeek.employer = "Not access labs"
+// const changes = {
+//     employer: "Access Labs",
+//     city: "Brooklyn",
+//     programmingLanguages: ["JS", "Ruby"]
+// }
 
+// const rei2019 = {
+//     ...rei2018,
+//     ...changes
+// }
 
-  
-  // console.log(reiNextWeek.daysWorkingOut)
-  // console.log(reiWeek)
-  // console.log(reiThisWeek)
-  // console.log(reiNextWeek)
-  // console.log(reiNextWeek)
-  // console.log(reiThisWeek  === reiNextWeek)
-  // console.log(reiNextWeek === reiNextWeek)
-  // console.log(reiNextWeek === reiThisWeek)
-  
+// const rei2020 = {
+//     ...rei2019,
+//     programmingLanguages: []
+// }
 
 
 // Could I do it to an array?
   
   
-  
-  const firstThreeMonths = ["January", "February", "March"]; 
-  
-  const lastSixMonths = ["July", "August", "September", "October", "November", "December"];
+const firstThreeMonths = ["January", "February", "March"]; 
 
-  const firstSixMonths = [...firstThreeMonths, "April", "May", "June"]
+const winterMonths = firstThreeMonths
 
-  console.log(firstSixMonths)
+winterMonths.push("December")
 
-  const firstHalfOfTheYear = [firstSixMonths[0], firstSixMonths[1], firstSixMonths[2], firstSixMonths[3], firstSixMonths[4], firstSixMonths[5]]
+// console.log(winterMonths)
+
+
+
+
+
+
+
+
+
+
+const lastSixMonths = ["July", "August", "September", "October", "November", "December"];
+
+
+const firstSixMonths = [firstThreeMonths[0], firstThreeMonths[1], firstThreeMonths[2], "April", "May", "June"]
+
+const firstHalfOfTheYear = []
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   const firstSixMonths = [...firstThreeMonths, "April", "May", "June"]
+
+
+//   const firstHalfOfTheYear = [firstSixMonths[0], firstSixMonths[1], firstSixMonths[2], firstSixMonths[3], firstSixMonths[4], firstSixMonths[5]]
 
   // console.log(firstHalfOfTheYear)
-  console.log(firstSixMonths[0] === firstHalfOfTheYear[0])
+//   console.log(firstSixMonths[0] === firstHalfOfTheYear[0])
   // console.log(firstSixMonths.join(" and "))
   // console.log(firstSixMonths === firstHalfOfTheYear)
 
