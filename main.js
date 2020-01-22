@@ -1,27 +1,28 @@
-// alert("connected")
-
 // What is the spread operator and why would I want to use it?
 
 
-const reiLastWeek = {
+const rei2018 = {
     name: "Rei",
+    employer: "Board of Education",
+    city: "Jersey City",
+    tired: true,
+    info: {
+        hair: "black",
+        wearsGlasses: false
+    },
+    programmingLanguages: []
+}
+
+const changes = {
     employer: "Access Labs",
-    borough: "Brooklyn",
-    tired: true
-  }
+    city: "Brooklyn",
+    programmingLanguages: ["JS", "Ruby"]
+}
 
-  const changes = {
-    tired: false,
-    lecturing: true
-  }
-
-  const reiThisWeek = {
-    ...reiLastWeek,
-    ...changes,
-    daysWorkingOut: [
-      "Wednesday"
-    ],
-  }
+const rei2019 = {
+...rei2018,
+...changes
+}
 
   const reiNextWeek = {
     ...reiThisWeek,
@@ -73,7 +74,7 @@ const reiLastWeek = {
   //   console.log(arg1,arg2,arg3)
     
   // }
-
+ 
   // const lastSixMonths = ["July", "August", "September", "October", "November", "December"];
   
   // spread
