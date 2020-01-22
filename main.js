@@ -20,20 +20,19 @@ const changes = {
 }
 
 const rei2019 = {
-...rei2018,
-...changes
+    ...rei2018,
+    ...changes
 }
 
-  const reiNextWeek = {
-    ...reiThisWeek,
-    daysWorkingOut: []
-  }
+const rei2020 = {
+    ...rei2019,
+    programmingLanguages: []
+}
 
   // reiNextWeek.name = "Reinald"
   // reiNextWeek.employer = "Not access labs"
 
-  reiNextWeek.daysWorkingOut.push("Thursday")
-  reiNextWeek.daysWorkingOut.push("Friday")
+
   
   // console.log(reiNextWeek.daysWorkingOut)
   // console.log(reiWeek)
