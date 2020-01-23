@@ -18,19 +18,14 @@ const rei2018 = {
 }
 
 const rei2019 = {
-    name: rei2018.name,
-    employer: "Access Labs",
-    city: "Brooklyn",
-    tired: rei2018.tired,
-    info: {
-        hair: rei2018.hair,
-        wearsGlasses: rei2018.wearsGlasses
-    },
-    programmingLanguages: rei2018.programmingLanguages
+    
 }
 
 
 // console.log(rei2018)
+
+
+
 
 // const changes = {
 //     employer: "Access Labs",
