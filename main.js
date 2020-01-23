@@ -17,9 +17,7 @@ const rei2018 = {
     programmingLanguages: []
 }
 
-const rei2019 = {
-    
-}
+// const rei2019
 
 
 // console.log(rei2018)
