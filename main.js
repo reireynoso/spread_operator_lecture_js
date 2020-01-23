@@ -1,9 +1,9 @@
 // What is the spread operator and why would I want to use it?
 
-// * copying information of an object and storing it into another object
-// * avoid mutating directly. 
-// * In react, we do not mutate state. State in memory triggers rerender. spread operator changes object in memory
-// * setState uses spread under hood.
+// 1. Copying information of an object and storing it into another object
+// 2. Avoid mutating directly. 
+// 3. In react, we do not mutate state. State in memory triggers rerender. spread operator changes object in memory
+// 4. setState uses spread under hood.
 
 const rei2018 = {
     name: "Rei",
